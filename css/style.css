@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.poppins{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /*200, 400, 600*/
+
+:root{
+    --cp1: hsl(0, 78%, 62%);
+    --cp2: hsl(180, 62%, 55%);
+    --cp3: hsl(34, 97%, 64%);
+    --cp4: hsl(212, 86%, 64%);
+    --cn1: hsl(234, 12%, 34%);
+    --cn2: hsl(229, 6%, 66%);
+    --cn3: hsl(0, 0%, 98%);
+    --font: 15px;
+
+
+}
+
+
+*{
+    margin:0;
+    padding: 0;
+    font-size: var(--font);
+}
+
+
+article{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    width: 320px;
+    padding: calc(var(--font)* 1);
+    padding-top: calc(var(--font)* 2);
+    padding-bottom: calc(var(--font)* 2);
+}
+
+p{
+    font-weight: 200;
+}
+
+
+
+article > div.line:nth-of-type(2){
+    display: flex;
+    flex-wrap: wrap;
+}
+article div.line > div.box{
+    flex: 320px;
+
+}
+
+
+
+article div.line:nth-of-type(1) section{
+    text-align: center;
+}
+
+
+article div.line:nth-of-type(2){
+    display: flex;
+    align-items: center;
+}
+
+article div.line:nth-of-type(2)  section{
+    box-shadow: 1px 1px 1rem 1px gray;
+}
+
+
+article div.line:nth-of-type(2) div.box:nth-of-type(1) > section:nth-of-type(1){
+    border-top: 5px solid var(--cp2);
+}
+
+article div.line:nth-of-type(2) div.box:nth-of-type(2) > section:nth-of-type(1){
+    border-top: 5px solid var(--cp1);
+}
+
+article div.line:nth-of-type(2) div.box:nth-of-type(2) > section:nth-of-type(2){
+    border-top: 5px solid var(--cp3);
+}
+
+article div.line:nth-of-type(2) div.box:nth-of-type(3) > section:nth-of-type(1){
+    border-top: 5px solid var(--cp4);
+}
+
+
+
+.box{
+    margin-left: var(--font);
+    margin-right: var(--font);
+}
+section{
+    margin-bottom: var(--font);
+}
+
+
+
+div.box-img{
+    display: flex;
+    justify-content: right;
+}
+
+img{
+    width: calc(var(--font) * 2.5);
+    margin-top: calc(var(--font) * 2.5);
+    
+
+
+}
+
+
+
+article div.line:nth-of-type(1) section h1{
+    color: var(--cn2);
+    font-size: calc(var(--font) * 1.5);
+    font-weight: 600;
+}
+
+article div.line:nth-of-type(1) section h2{
+    color: var(--cn1);
+    font-size: calc(var(--font) * 1.5);
+    font-weight: 600;
+}
+
+article div.line:nth-of-type(1) section p{
+    margin-top: var(--font);
+    font-size: calc(var(--font) * 0.6);
+    text-align: center;
+    font-weight: 400;
+
+}
+
+
+
+/*pras 4 ultimas*/
+article div.line:nth-of-type(2) div.box section > h1{
+    color: var(--cn1);
+
+}
+
+/*media query para celular*/
+@media (max-width:1160px) {
+    main{
+        height: unset;
+    
+        
+       
+    }
+
+    article{
+        width: 390px;
+
+        
+
+    }
+
+    
+    
+}
